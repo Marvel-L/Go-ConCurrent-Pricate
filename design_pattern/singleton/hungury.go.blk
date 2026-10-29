@@ -1,0 +1,10 @@
+package singleton
+
+var instance *Singleton = &Singleton{}
+
+type Singleton struct {
+}
+
+func GetInstance() *Singleton {
+	return instance
+}
